@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Programs - Air India</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="programs.js"></script> <!-- JavaScript for interactivity -->
+</head>
+<style>
+    /* Programs Page Styling */
+.programs-section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.info-box {
+    background: linear-gradient(to right, #004e92, #000428);
+    color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Image Styling */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-caption {
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 5px;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form button {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+form button:hover {
+    background: linear-gradient(to right, #dd2476, #ff512f);
+}
+
+</style>
+<body>
+
+    <header>
+        <h1>Our Programs</h1>
+        <nav>
+           <ul>
+           <li> <a href="index.html">Home</a></li>
+           <li> <a href="about.html">About Us</a></li>
+           <li> <a href="updates.html">Live Updates</a></li>
+           <li><a href="programs.html">Our Programs</a></li>
+           <li> <a href="contact.html">Contact Us</a></li>
+           <li><a href="account.html" class="account-btn">Make Your Account</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <section class="programs-section">
+        <h2>Exclusive Air India Programs</h2>
+        <p>At Air India, we believe in offering the best travel experience and career growth opportunities. Whether you are a frequent flyer looking for priority booking, an aspiring pilot wanting to learn from the best, or an airline staff member seeking travel benefits, we have something for everyone. Our programs are designed to provide unmatched convenience, learning, and privileges for our members.</p>
+
+        <div class="info-box">
+            <h3>🚀 Passenger Membership Program</h3>
+            <p>Our Passenger Membership Program is designed for travelers who frequently fly with Air India. Members enjoy exclusive benefits such as priority ticket booking, discounted fares, and last-minute ticket confirmations. In times of high demand or emergencies, regular passengers often struggle to get confirmed tickets. However, our members get priority access to available seats, ensuring they never face difficulties in booking their flights.</p>
+        </div>
+
+        <div class="info-box">
+            <h3>✈️ Staff Seat Booking Program</h3>
+            <p>The Staff Seat Booking Program is an exclusive benefit for our hardworking Air India employees. Airline employees often have to travel between cities for work-related purposes. This program allows staff members to book vacant seats on flights at special discounted rates.</p>
+        </div>
+
+        <div class="info-box">
+            <h3>👩‍✈️ Pilot Training & Internship</h3>
+            <p>Air India is dedicated to training the next generation of aviation professionals. Our **Pilot Training Academy** provides hands-on experience with state-of-the-art flight simulators, guided by experienced pilots. We offer specialized training for both **male and female aspiring pilots**, ensuring a diverse and inclusive learning environment.</p>
+
+            <p>In addition to technical training, we focus on **soft skills, safety protocols, and emergency handling**. Our internship programs provide real-world exposure, allowing students to work alongside Air India professionals in different departments like flight operations, customer service, and air traffic management.</p>
+
+            <!-- Image of Trainee Girls -->
+            <div class="image-container">
+                <img src="girls.jpg" alt="Trainee Girls in Pilot Training">
+                <p class="img-caption">Air India's female trainees in pilot training sessions.</p>
+            </div>
+        </div>
+
+        <h2>📌 Enroll in Our Online Programs</h2>
+        <p>If you are interested in pursuing a career in the aviation industry, you can enroll in our online training programs. We offer specialized courses in different areas of aviation, including pilot training, cabin crew certification, and ground staff management.</p>
+
+        <form id="enrollment-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+
+            <label for="program">Select Program:</label>
+            <select id="program">
+                <option value="pilot-training">Pilot Training</option>
+                <option value="cabin-crew">Cabin Crew Certification</option>
+                <option value="ground-staff">Ground Staff Training</option>
+            </select>
+
+            <button type="submit">Enroll Now</button>
+        </form>
+    </section>
+
+</body>
+</html>

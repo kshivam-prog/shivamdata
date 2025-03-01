@@ -1,0 +1,106 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Your Account - Air India</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Account Page Styling */
+.account-form {
+    width: 40%;
+    margin: auto;
+    padding: 30px;
+    background: linear-gradient(to right, #ffffff, #e0e0e0);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: #ec6911;
+    border-color: #cc5500;
+}
+body{
+    background: linear-gradient(to right, #fd7709f6, #f3600b);
+    
+}
+
+
+/* Form Inputs */
+.account-form input, .account-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+.account-form button {
+    width: 100%;
+    padding: 10px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.account-form button:hover {
+    background: #cc5500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .account-form {
+        width: 90%;
+    }
+}
+
+</style>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>Air India</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="updates.html">Live Updates</a></li>
+                <li><a href="programs.html">Our Programs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="account.html">Make Your Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Account Creation Form -->
+    <main>
+        <section class="account-form">
+            <h2>Create Air India Expres Account</h2>
+            <form id="registerForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="membership">Choose Membership Type:</label>
+                <select id="membership" name="membership" required>
+                    <option value="passenger">Passenger Membership (Priority Booking)</option>
+                    <option value="staff">Staff Membership (Empty Seat Access)</option>
+                </select>
+
+                <button type="submit">Create Account</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="scriptrs.js"></script>
+
+</body>
+</html>

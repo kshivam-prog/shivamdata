@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Air India</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* About Us Page */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+   /* background: linear-gradient(to right, #6bb0ec, #5d74f5);*/
+   background: linear-gradient(to right, #fd7f09f6, #d48557);
+}
+
+/* Text Content */
+.about-content {
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #b5c4d1, #fafafc);
+    border-radius: 10px;
+}
+
+/* Image Section */
+.about-image {
+    width: 35%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+    .about-content {
+        width: 90%;
+    }
+    .about-image {
+        width: 90%;
+    }
+}
+
+</style>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>Air India</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="updates.html">Live Updates</a></li>
+                <li><a href="programs.html">Our Programs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="account.html">Make Your Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <main>
+        <section class="about">
+            <div class="about-content">
+                <h2>About Air India</h2>
+                <p>
+                    Founded in 1932, Air India is India's leading airline, connecting millions of passengers across the globe. 
+                    As a pioneer in aviation, we take pride in offering world-class service, state-of-the-art aircraft, and a commitment to safety and reliability. 
+                    Our mission is to provide seamless travel experiences, ensuring comfort, efficiency, and the best customer service in the industry.
+                </p>
+                <p>
+                    With an extensive fleet of modern aircraft, including the Boeing 787 Dreamliner and Airbus A320neo, Air India serves over 100 destinations worldwide. 
+                    We focus on innovation, sustainability, and excellence, making us the preferred choice for travelers seeking luxury and affordability.
+                </p>
+                <p>
+                    Our dedicated crew and ground staff work tirelessly to provide exceptional service. From priority boarding to exclusive in-flight entertainment, 
+                    we ensure a smooth and enjoyable journey. Join us in experiencing the best of Indian hospitality at 35,000 feet.
+                </p>
+            </div>
+
+            <!-- About Us Image -->
+            <div class="about-image">
+                <img src="history.jpg" alt="Air India History">
+            </div>
+            <div>
+                <img src="plane.jpg" alt="Air India History">
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

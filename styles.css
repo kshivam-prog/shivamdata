@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   /* background: linear-gradient(to right, #f85c5c, #f1750e);*/
+   background: gainsboro;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 15px 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #e61515;
+    border-radius: 5px;
+}
+
+/* Banner Image */
+.banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Sections */
+section {
+    background: linear-gradient(to right, #ff7e06, #d48557);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Images in Sections */
+section img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 400px;
+}
+
+button {
+    background: #4facfe;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00c2fe;
+}
+
+/* Highlight Button */
+.highlight {
+    background: #ff9800;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+/* Fade-in effect for programs section */
+.programs-section {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+/* Form Scale Animation */
+#enrollment-form {
+    transition: transform 0.3s ease-in-out;
+}

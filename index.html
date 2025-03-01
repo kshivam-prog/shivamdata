@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air India - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>Air India</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="updates.html">Live Updates</a></li>
+                <li><a href="programs.html">Our Programs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="account.html" >Make Your Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="intro">
+            <h2>WELCOME TO AIR INDIA EXPRESS</h2>
+            <p>
+                Air India Express , India’s flagship airline, provides world-class travel experiences. We offer extensive domestic and international connectivity, ensuring comfort, safety, and top-tier services. Our advanced AI-driven booking system prioritizes members and staff, ensuring ticket confirmations even during critical situations.
+            </p>
+        </section>
+        <!-- Banner Image -->
+    <section class="banner">
+        <img src="staff.jpg" alt="Air India Flight">
+    </section>
+
+        <!-- Membership Form -->
+        <section class="membership">
+            <h2>Join Our Membership Program</h2>
+            <img src="membership.jpg" alt="VIP Lounge">
+            <form id="membershipForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="membershipType">Membership Type:</label>
+                <select id="membershipType">
+                    <option value="passenger">Passenger</option>
+                    <option value="staff">Staff</option>
+                </select>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Online Programs Joining Form -->
+        <section class="programs">
+            <h2>Join Our Online Programs</h2>
+            <img src="pilot.jpg" alt="Pilot Training">
+            <form>
+                <label for="program">Select Program:</label>
+                <select id="program">
+                    <option value="pilot-training">Pilot Training</option>
+                    <option value="aviation-management">Aviation Management</option>
+                </select>
+                <button type="submit">Join Now</button>
+            </form>
+        </section>
+
+        <!-- Staff Ticket Booking Form -->
+        <section class="staff-booking">
+            <h2>Staff Ticket Booking</h2>
+            <img src="crew.jpg" alt="Air India Crew">
+            <form>
+                <label for="staffName">Staff Name:</label>
+                <input type="text" id="staffName" required>
+
+                <label for="staffID">Staff ID:</label>
+                <input type="text" id="staffID" required>
+
+                <label for="flightNumber">Flight Number:</label>
+                <input type="text" id="flightNumber" required>
+
+                <button type="submit">Book Seat</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

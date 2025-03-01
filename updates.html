@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Updates - Air India</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="updates.js"></script> <!-- JavaScript for real-time flight data -->
+</head>
+<style>
+    /* Live Updates Page */
+.live-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.flight-container {
+    width: 90%;
+    margin: auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: linear-gradient(to right, #004e92, #000428);
+    color: white;
+}
+
+td {
+    font-size: 16px;
+}
+
+/* Flight Status Colors */
+.status-on-time { color: green; font-weight: bold; }
+.status-delayed { color: red; font-weight: bold; }
+.status-boarding { color: orange; font-weight: bold; }
+.status-departed { color: blue; font-weight: bold; }
+.status-scheduled { color: darkgray; font-weight: bold; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+}
+
+/* Additional Styling */
+.info-box {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.info-box h3 {
+    color: #004e92;
+}
+
+</style>
+<body>
+
+    <header>
+        <h1>Live Flight Updates</h1>
+        <nav>
+           <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li> <a href="updates.html">Live Updates</a></li>
+                <li> <a href="programs.html">Our Programs</a></li>
+                    <li> <a href="contact.html">Contact Us</a></li>
+                        <li> <a href="account.html" class="account-btn">Make Your Account</a></li>
+           </ul> 
+             <!-- NEW BUTTON -->
+        </nav>
+    </header>
+
+    <section class="live-section">
+        <h2>Real-Time Air India Flight Information</h2>
+        <p>Stay updated with real-time flight tracking. Our system provides accurate, live updates on Air India flights worldwide, including departure and arrival times, flight statuses, and live locations.</p>
+
+        <div class="info-box">
+            <h3>Flight Tracking Technology</h3>
+            <p>Air India uses advanced satellite-based tracking systems to monitor flights in real time. Each aircraft is equipped with GPS transponders that send live data to ground control, allowing us to provide the most up-to-date information on departure, arrival, and delays.</p>
+        </div>
+
+        <div class="info-box">
+            <h3>How We Update Flight Status</h3>
+            <p>Our AI-driven system analyzes multiple data points, including air traffic, weather conditions, and airport congestion, to ensure you receive the most reliable updates. Whether you are a passenger, family member, or aviation enthusiast, this page provides the latest flight updates.</p>
+        </div>
+
+        <h2>Live Air India Flight Status</h2>
+        <div class="flight-container">
+            <table id="flightTable">
+                <thead>
+                    <tr>
+                        <th>Flight Number</th>
+                        <th>Origin</th>
+                        <th>Destination</th>
+                        <th>Departure Time</th>
+                        <th>Arrival Time</th>
+                        <th>Status</th>
+                        <th>Live Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Live flight data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</body>
+</html>
